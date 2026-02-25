@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("0a0fb575-a4be-4ea4-9e7e-a503496fdc7f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CivicReportingAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e544455bcdc308521c00fed0797a0b5519c1d3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CivicReportingAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CivicReportingAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

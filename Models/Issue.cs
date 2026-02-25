@@ -23,7 +23,7 @@ public class Issue
     public decimal Latitude { get; set; }
     public decimal Longitude { get; set; }
 
-    public string Status { get; set; } = "Reported";
+    public Issue_status Status { get; set; } = Issue_status.Reported;
 
     public int PriorityScore { get; set; } = 0;
 

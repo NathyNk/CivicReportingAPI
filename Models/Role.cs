@@ -1,13 +1,19 @@
 using System.ComponentModel.DataAnnotations;
-namespace CivicReportingAPI.Models;
-public class Role
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CivicReportingAPI.Models
 {
-   
-    public int Id { get; set; }
-    [Required]
-    public string Name { get; set; }
+    [Table("roles")]
+    public class Role
+    {
+        public int Id { get; set; }
 
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+        [Required]
+        [MaxLength(50)]
+        public string Name { get; set; }
 
-    public ICollection<User> Users { get; set; }
+        public DateTime CreatedAt { get; set; }
+
+        public ICollection<User> Users { get; set; } = new List<User>();
+    }
 }

@@ -1,16 +1,24 @@
 using System.ComponentModel.DataAnnotations;
-namespace CivicReportingAPI.Models;
-public class Municipality
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CivicReportingAPI.Models
 {
-    public int Id { get; set; }
+    [Table("municipalities")]
+    public class Municipality
+    {
+        public int Id { get; set; }
 
-    [Required]
-    public string Name { get; set; }
+        [Required]
+        [MaxLength(150)]
+        public string Name { get; set; }
 
-    [Required]
-    public string Province { get; set; }
+        [Required]
+        [MaxLength(100)]
+        public string Province { get; set; }
 
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; }
 
-    public ICollection<Issue> Issues { get; set; }
+        public ICollection<User> Users { get; set; } = new List<User>();
+        public ICollection<Issue> Issues { get; set; } = new List<Issue>();
+    }
 }

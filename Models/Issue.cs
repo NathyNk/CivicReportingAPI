@@ -1,33 +1,50 @@
 using System.ComponentModel.DataAnnotations;
-namespace CivicReportingAPI.Models;
-public class Issue
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CivicReportingAPI.Models
 {
-    public int Id { get; set; }
+    [Table("issues")]
+    public class Issue
+    {
+        public int Id { get; set; }
 
-    [Required]
-    public int UserId { get; set; }
-    public User User { get; set; }
+        [Required]
+        public int UserId { get; set; }
+        public User User { get; set; }
 
-    [Required]
-    public int MunicipalityId { get; set; }
-    public Municipality Municipality { get; set; }
+        [Required]
+        public int MunicipalityId { get; set; }
+        public Municipality Municipality { get; set; }
 
-    [Required]
-    public string Title { get; set; }
+        [Required]
+        [MaxLength(200)]
+        public string Title { get; set; }
 
-    [Required]
-    public string Description { get; set; }
+        [Required]
+        public string Description { get; set; }
 
-    public string Category { get; set; }
+        [Required]
+        [MaxLength(100)]
+        public string Category { get; set; }
 
-    public decimal Latitude { get; set; }
-    public decimal Longitude { get; set; }
+        [Column(TypeName = "decimal(10,8)")]
+        public decimal Latitude { get; set; }
 
-    public Issue_status Status { get; set; } = Issue_status.Reported;
+        [Column(TypeName = "decimal(11,8)")]
+        public decimal Longitude { get; set; }
 
-    public int PriorityScore { get; set; } = 0;
+        public Issue_status Status { get; set; } = Issue_status.Reported;
 
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public int PriorityScore { get; set; } = 0;
 
-    public DateTime UpdatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime UpdatedAt { get; set; }
+
+        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+        public ICollection<Issue_Image> Images { get; set; } = new List<Issue_Image>();
+        public ICollection<Issue_upvote> Upvotes { get; set; } = new List<Issue_upvote>();
+        public ICollection<IssueStatusHistory> StatusHistory { get; set; } = new List<IssueStatusHistory>();
+    }
 }

@@ -123,3 +123,4 @@ C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\refint\CivicReportingAPI.dll
 C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.pdb
 C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.genruntimeconfig.cache
 C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\ref\CivicReportingAPI.dll
+C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.sourcelink.json

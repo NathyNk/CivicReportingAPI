@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CivicReportingAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36ce4545ba837c444a97a92ea1bda7e90a5817ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a1fe6f72c2de0333946786c4b10c326deb56966")]
 [assembly: System.Reflection.AssemblyProductAttribute("CivicReportingAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CivicReportingAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -123,6 +123,7 @@ C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\refint\CivicReportingAPI.dll
 C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.pdb
 C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.genruntimeconfig.cache
 C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\ref\CivicReportingAPI.dll
+<<<<<<< HEAD
 C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\bin\Debug\net10.0\appsettings.json
 C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\bin\Debug\net10.0\CivicReportingAPI.staticwebassets.endpoints.json
@@ -300,3 +301,6 @@ C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\obj\Debug\net10.0\refint\Civ
 C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.pdb
 C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.genruntimeconfig.cache
 C:\Users\user101\OneDrive\Desktop\CivicReportingAPI\obj\Debug\net10.0\ref\CivicReportingAPI.dll
+=======
+C:\Users\ssphe\CivicReportingAPI\obj\Debug\net10.0\CivicReportingAPI.sourcelink.json
+>>>>>>> 8987495a649e604e4a089b6259e99f48f5b36429
